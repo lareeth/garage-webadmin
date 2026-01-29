@@ -1,0 +1,46 @@
+{
+  "gray": {
+    "gray-50": "#FDFCFA",
+    "gray-100": "#FAF8F6",
+    "gray-150": "#F5F2F0",
+    "gray-200": "#EFEBE8",
+    "gray-250": "#E8E3DF",
+    "gray-300": "#DFD9D5",
+    "gray-350": "#D4CEC9",
+    "gray-400": "#C8C1BC",
+    "gray-450": "#BBB4AE",
+    "gray-500": "#ADA59E",
+    "gray-550": "#9D958D",
+    "gray-600": "#8C837C",
+    "gray-650": "#7B7169",
+    "gray-700": "#685E56",
+    "gray-750": "#554B42",
+    "gray-800": "#41372E",
+    "gray-850": "#2D231B",
+    "gray-900": "#191007",
+    "gray-950": "#060200"
+  },
+  "brand": {
+    "brand-1": "#FFEEDD",
+    "brand-2": "#FFD9B3",
+    "brand-3": "#FFB366",
+    "brand-4": "#FF9124",
+    "brand-5": "#E57300",
+    "brand-6": "#8A4500",
+    "brand-7": "#572B00"
+  },
+  "accent": {
+    "accent-red": "#E12B2B",
+    "accent-orange": "#FA9248",
+    "accent-yellow": "#FFDE75",
+    "accent-green": "#4DA764",
+    "accent-blue": "#2B71DB"
+  },
+  "accentLight": {
+    "accent-red-light": "#FFF0F0",
+    "accent-orange-light": "#FFEADB",
+    "accent-yellow-light": "#FFF5D3",
+    "accent-green-light": "#E1FBE7",
+    "accent-blue-light": "#EDF4FF"
+  }
+}
