@@ -6,7 +6,7 @@ eleventyNavigation:
   order: 3
 ---
 
-A component displaying informations in a "explorative" situation.
+A component displaying information in a "exploratory" situation.
 
 ## Descriptive list
 

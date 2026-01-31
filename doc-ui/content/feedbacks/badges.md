@@ -6,6 +6,6 @@ eleventyNavigation:
   order: 1
 ---
 
-A small label component to add information on another component or entity state, status or metadata
+A small label component to add information on another component or entity's state, status or metadata
 
 {% demo "/demos/example.vue" %}

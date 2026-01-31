@@ -6,6 +6,6 @@ eleventyNavigation:
   order: 4
 ---
 
-A mean to display informational data about a component next to it.
+A way to display informational data about a component next to it.
 
 {% demo "/demos/example.vue" %}

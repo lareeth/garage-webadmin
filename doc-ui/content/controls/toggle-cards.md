@@ -6,6 +6,6 @@ eleventyNavigation:
   order: 5
 ---
 
-A component composed of a toggle button and nested description or option unlockable when selected
+A component composed of a toggle button and a nested description or options unlockable when selected
 
 {% demo "/demos/example.vue" %}

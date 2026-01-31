@@ -15,3 +15,7 @@
 	margin-bottom: .5rem;
 	/* padding-left: 1.125rem; */
 }
+
+.example-showcase hr {
+	margin-block: 1ch;
+}

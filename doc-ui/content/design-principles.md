@@ -5,29 +5,29 @@ eleventyNavigation:
   order: 1
 ---
 
-Guidelines are not hardset rules but directions on which tracks mainteners can do their best to put this software on, knowing there gonna be exceptions.
+Guidelines are not hardset rules but directions that will guide contributors, knowing that there will be exceptions.
 
 ## Keep it simple and consistent
 
-Servers administration is a complexe subject, with potentially stressful outcomes. Having a graphical user interface is gonna be able to help even more the less tech savy people.
+Server administration is a complexe subject, with potentially stressful outcomes. Having a graphical user interface greatly helps even the less tech savy people.
 
-Consistency is one of the ways to limite the cognitive load needed to understand the a software.
+As such, consistency is one of the ways to limite the cognitive load needed to understand the software.
 
-It's a way to limit a codebase's complexity by having a set of elements and standardized ways to compose interfaces and user workflow with them.\
-It's however still needs to be noted, it's better to prioritize *user* experience over *developer* experience.
+It is a way to limit a codebase's complexity, by having a standardized set of elements, ways to compose interfaces, and user workflow within them.\
+It remains to be noted that it is better to prioritize *user* experience over *developer* experience.
 
-- Decide what informations are the more important and don't display necessarily all the data at once. You can use components like [popovers](/containers/popovers) to disclose additional informations only if necessary.
+- Decide what information is the most important and do not display all of the data at once. You can use components like [popovers](/containers/popovers) to disclose additional information only if necessary.
 - Limit the number of options in choices or controls lists and always offer a default one
-- Keep labels, messages as short as possible
+- Keep labels and messages as short as possible
 
-## Limit frictions
+## Limit friction
 
-- Add confirmation patterns (modal or checkboxes unchecked by default) before applying destrutive operations
+- Add confirmation patterns (modals or checkboxes unchecked by default) before applying destrutive operations
 - Automate error correction if possible to make it transparent to users
-- Make error messages link to elements its related to (visually and semantically)
+- Make error messages link to elements they are related to (visually and semantically)
 
 ## Use the platform
 
-Make the use of the tools, elements and APIs made available by the web browsers if possible instead of reimplment custom components.
-- Priorize the [basic form elements](/controls/form-elements) after other custom ones.
-- Write semantic HTML (for example the [popovers](/controls/popovers) and [dialogs](/feedbacks/dialog) elements use the eponym HTML components)
+Make the use of the tools, elements and APIs made available by web browsers if possible instead of reimplementing custom components.
+- Priorize the [basic form elements](/controls/form-elements) over other custom ones
+- Write semantic HTML (for example the [popovers](/controls/popovers) and [dialogs](/feedbacks/dialog) elements use the eponymous HTML components)

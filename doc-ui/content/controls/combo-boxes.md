@@ -6,6 +6,6 @@ eleventyNavigation:
   order: 6
 ---
 
-An element that behaves similarly to a select, with the addition of a free text input to filter options
+An element that behaves similarly to a `<select>` element, with the addition of a free text input to filter options
 
 {% demo "/demos/example.vue" %}
