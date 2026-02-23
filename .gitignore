@@ -33,3 +33,8 @@ __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+# Preview test release
+
+scripts/release-preview/released
+scripts/release-preview/garage-webadmin-prelease*.zip
