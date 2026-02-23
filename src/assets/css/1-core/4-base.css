@@ -1,0 +1,27 @@
+body {
+	font-family: var(--fontstack-sans);
+	font-size: var(--base-font);
+	line-height: var(--base-lh);
+	color: var(--color-gray-900);
+	background-color: var(--color-gray-200);
+}
+
+/* Spread the VueJS app's container */
+#app {
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Smooth focus ring */
+* {
+	outline-color: var(--color-brand-3);
+	outline-offset: calc(-1 * var(--space-2));
+}
+*:focus-visible {
+	outline-style: solid;
+	outline-width: var(--space-2);
+	outline-color: var(--color-brand-3);
+	outline-offset: var(--space-1);
+	transition: outline-offset 0.1s ease;
+}

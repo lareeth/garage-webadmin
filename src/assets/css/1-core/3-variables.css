@@ -1,0 +1,46 @@
+:root {
+	--fontstack-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--fontstack-monospace: ui-monospace, monospace, var(--fontstack-emoji);
+	--fontstack-sans: ui-sans-serif, system-ui, sans-serif, var(--fontstack-emoji);
+	--fontstack-serif: ui-serif, serif, var(--fontstack-emoji);
+	--fontstack-heading:
+		"Fira Sans", "Fira Sans Fallback", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, sans-serif,
+		var(--fontstack-emoji);
+
+	--ui-text-display: 2.5rem;
+	--ui-text-display-lh: 1.3;
+	--ui-text-h1: 1.625rem;
+	--ui-text-h1-lh: 1.3846;
+	--ui-text-h2: 1.375rem;
+	--ui-text-h2-lh: 1.3636;
+	--ui-text-h3: 1.125rem;
+	--ui-text-h3-lh: 1.4444;
+	--ui-text-large: 1.125rem;
+	--ui-text-large-lh: 1.44;
+	--ui-text-body: 1rem;
+	--ui-text-body-lh: 1.5;
+	--ui-text-small: 0.875rem;
+	--ui-text-small-lh: 1.4285;
+	--ui-text-tiny: 0.75rem;
+	--ui-text-tiny-lh: 1.5;
+
+	--base-font: var(--ui-text);
+	--base-lh: var(--ui-text-lh);
+
+	--container: 50rem;
+	--container-small: 37.5rem;
+	--container-medium: 53.125rem;
+	--container-large: 68.75rem;
+
+	--container-box-shadow: 0 0.125rem 0.25rem var(--color-gray-350);
+	--container-box-border: 0.0625rem solid var(--color-gray-250);
+	--container-box-radius: 0.5rem;
+	--container-box-inset: var(--space-24);
+
+	@custom-media --screen-md (max-width: 768px);
+	@custom-media --screen-md--reverse (min-width: 768px);
+	@custom-media --screen-sm (max-width: 400px);
+	@custom-media --screen-sm--reverse (min-width: 400px);
+
+	@design-token-utils (custom-properties);
+}

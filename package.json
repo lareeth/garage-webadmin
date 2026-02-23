@@ -1,0 +1,48 @@
+{
+	"name": "garage-webadmin",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "run-p type-check \"build-only {@}\" --",
+		"preview": "vite preview",
+		"build-only": "vite build",
+		"type-check": "vue-tsc --build",
+		"lint": "oxlint . --fix",
+		"lint:check": "oxlint .",
+		"format": "oxfmt .",
+		"format:check": "oxfmt . --check",
+		"fix": "run-s format lint",
+		"check": "run-s format:check lint:check"
+	},
+	"dependencies": {
+		"@phosphor-icons/vue": "^2.2.1",
+		"garage-admin-sdk-ts": "git+https://git.deuxfleurs.fr/garage-sdk/garage-admin-sdk-ts.git",
+		"vue": "^3.5.27",
+		"vue-router": "^5.0.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.1",
+		"@tsconfig/node24": "^24.0.4",
+		"@types/node": "^24.10.9",
+		"@vitejs/plugin-vue": "^6.0.3",
+		"@vue/tsconfig": "^0.8.1",
+		"npm-run-all2": "^8.0.4",
+		"oxfmt": "^0.33.0",
+		"oxlint": "^1.48.0",
+		"postcss": "^8.5.6",
+		"postcss-custom-media": "^12.0.0",
+		"postcss-design-token-utils": "^3.0.1",
+		"typescript": "~5.9.3",
+		"vite": "beta",
+		"vite-plugin-magical-svg": "^1.8.0",
+		"vite-plugin-vue-devtools": "^8.0.5",
+		"vite-svg-loader": "^5.1.0",
+		"vue-tsc": "^3.2.4",
+		"whatwg-fetch": "^3.6.20"
+	},
+	"engines": {
+		"node": "^20.19.0 || >=22.12.0"
+	}
+}
