@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
 
+printf -v date '%(%Y-%m-%d)T'
+
 current_dir="$(dirname $(realpath $0))"
 project_dir="$(dirname $(dirname $current_dir))"
+release_folder_name="garage-webadmin-prelease-$date"
 
-echo $current_dir
+mkdir -p $current_dir/released/$release_folder_name
 
-mkdir -p $current_dir/released
+rm -rf "$current_dir/released/$release_folder_name/*"
 
-rm -rf $current_dir/released/**
+cp -r $project_dir/dist $current_dir/released/$release_folder_name/dist
 
-echo "$project_dir/dist $current_dir/released"
-cp -r $project_dir/dist $current_dir/released/dist
+cp $current_dir/files/** $current_dir/released/$release_folder_name/
 
-cp $current_dir/files/** $current_dir/released/
-
-printf -v date '%(%Y-%m-%d)T\n' -1
-
-zip -r $current_dir/garage-webadmin-prelease-$date.zip $current_dir/released/
+cd $current_dir/released/ && zip -r $current_dir/$release_folder_name.zip ./$release_folder_name
