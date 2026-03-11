@@ -8,4 +8,4 @@ ADD ./ .
 
 RUN npm install
 
-CMD ["npx", "vite", "preview"]
+CMD ["npx", "vite", "preview", "--host", "0.0.0.0", "--port", "3000"]
