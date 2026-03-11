@@ -26,6 +26,7 @@ export default defineConfig(({ mode }) => {
 		},
 		publicDir: "static",
 		server: {
+			allowedHosts: true,
 			proxy: {
 				"/api": {
 					target: env.API_HOST,
